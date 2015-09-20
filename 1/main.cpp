@@ -7,9 +7,24 @@
 //
 
 #include <iostream>
+#include <stdio.h>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+
+int main()
+{
+    int n,g=0;
+    cout<<"vvedite chislo ";
+    cin>>n;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int k = 5; k < n; k *= 5 )
+        {
+            if ((i % k) == 0)
+            {
+                g++;
+            }
+        }
+    }
+    cout<<"otvet "<<g;
 }
