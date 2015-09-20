@@ -10,12 +10,21 @@
 #include <stdio.h>
 using namespace std;
 
+int factor (int n);
 
 int main()
 {
-    int n,g=0;
+   int n;
     cout<<"vvedite chislo ";
     cin>>n;
+    cout<<"otvet "<<factor(n);
+}
+
+
+
+int factor (int n)
+{
+    int g = 0;
     for (int i = 1; i <= n; i++)
     {
         for (int k = 5; k < n; k *= 5 )
@@ -26,5 +35,6 @@ int main()
             }
         }
     }
-    cout<<"otvet "<<g;
+    
+    return g;
 }
