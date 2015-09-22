@@ -14,7 +14,7 @@ int factor (int n)
 	int g = 0;
     for (int i = 1; i <= n; i++)
     {
-        for (int k = 5; k < n; k *= 5 )
+        for (int k = 5; k <= n; k *= 5 )
         {
             if ((i % k) == 0)
             {
